@@ -1,0 +1,24 @@
+.main{
+    width: 100%;
+}
+.fieldset{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.table{
+    background: azure;
+    border: 2px solid;
+    padding: 2px;
+}
+
+.table tr td {
+    width: 200px;
+}
+.table tr td input{
+    border-radius: 20px;
+    height: 20px;
+}
+.redError{
+    color: red;
+}
