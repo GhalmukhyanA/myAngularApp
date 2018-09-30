@@ -17,12 +17,12 @@ export class AppComponent {
             'userName': new FormControl('',
                 [Validators.required,
                     Validators.minLength(3),
-                    Validators.pattern(/^[a-zA-Z ]{2,30}$/g)]),
+                    Validators.pattern(/^[A-Za-z ]{2,30}$/g)]),
 
             'userSurname': new FormControl('',
                 [Validators.required,
                     Validators.minLength(3),
-                    Validators.pattern(/^[a-zA-Z]+(?:[\s-][a-zA-Z]+)*$/g)]),
+                    Validators.pattern(/^[A-Za-z]+(?:[\s-][A-Za-z]+)*$/g)]),
 
             'userEmail': new FormControl('',
                 [Validators.required, Validators.minLength(4),

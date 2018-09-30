@@ -82,7 +82,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="text-align: right">
-                        <button  (click)="submitForm()">Ok</button>
+                        <button  [disabled]="loginForm.invalid" (click)="submitForm()">Ok</button>
                     </td>
                 </tr>
             </table>
