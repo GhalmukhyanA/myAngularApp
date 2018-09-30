@@ -25,8 +25,9 @@ export class AppComponent {
                     Validators.pattern(/^[A-Za-z]+(?:[\s-][A-Za-z]+)*$/g)]),
 
             'userEmail': new FormControl('',
-                [Validators.required, Validators.minLength(4),
+                [Validators.required,
                     Validators.pattern(/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/g)]),
+
             'userGender': new FormControl('', Validators.required),
             'password': new FormControl('', Validators.required),
             'confirmPassword': new FormControl('', Validators.required),

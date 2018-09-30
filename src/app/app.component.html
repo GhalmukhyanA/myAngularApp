@@ -43,24 +43,23 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="text-align: right"
-                        *ngIf="loginForm.controls['userEmail'].touched && loginForm.controls['userEmail'].invalid && loginForm.controls['userEmail'].hasError('pattern')"
+                        *ngIf="loginForm.controls['userEmail'].touched && loginForm.controls['userEmail'].invalid && loginForm.controls['userEmail'].hasError('required')"
                         class="redError">
                         Email is invalid
                     </td>
                 </tr>
-
                 <tr>
                     <td>
-                        <input type="radio" formControlName="userGender" value="male">
-                        Male
+                        <label>
+                            <input type="radio" formControlName="userGender" value="male">
+                            Male
+                        </label>
                     </td>
                     <td>
-                        <input type="radio" formControlName="userGender" value="female">
-                        Female
-                    </td>
-                    <td colspan="2" style="text-align: right"
-                        *ngIf="loginForm.controls['userGender'].touched && loginForm.get('userGender').invalid">
-                        Gender required.
+                        <label>
+                            <input type="radio" formControlName="userGender" value="female">
+                            Female
+                        </label>
                     </td>
                 </tr>
                 <tr>
